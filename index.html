@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charanjeet's Valentine Hack | 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="loveSong" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" loop></audio>
+
+    <div id="buffer-screen">
+        <div class="ripple-heart">
+            <div></div><div></div>
+            <span class="main-heart">❤️</span>
+        </div>
+        <p class="loading-text">Loading Romance...</p>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <h2 class="fancy">Profile Details</h2>
+        <p><b>Name:</b> Charanjeet</p>
+        <p><b>DOB:</b> 8 Jan 2006</p>
+        <p><b>Home:</b> Rajasthan</p>
+        <hr>
+        <button onclick="toggleMenu()" style="background:#444;">Close Sidebar</button>
+    </div>
+
+    <header id="main-header" class="hidden">
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="nav-title">VALENTINE 2026</div>
+        <div style="width:24px"></div>
+    </header>
+
+    <div class="container hidden" id="main-container">
+        <div id="step1" class="card">
+            <div class="icon">🌹</div>
+            <h2>Love Meter</h2>
+            <p>Verify connection with <b>Charanjeet</b></p>
+            <input type="text" id="herName" placeholder="Enter her name">
+            <div class="plus">+</div>
+            <div class="my-name">Charanjeet</div>
+            <button onclick="calculateLove()">Analyze Compatibility</button>
+        </div>
+
+        <div id="step2" class="card hidden">
+            <h2 class="fancy pink">Syncing Hearts...</h2>
+            <div class="progress-bar"><div id="fill" class="fill"></div></div>
+            <div id="percent">0%</div>
+        </div>
+
+        <div id="step3" class="card hidden">
+            <h1 class="fancy bigger pink">Will you be my Valentine?</h1>
+            <div class="btn-box">
+                <button id="yesBtn" onclick="showFinal()">YES! ❤️</button>
+                <button id="noBtn">No 💔</button>
+            </div>
+        </div>
+
+        <div id="step4" class="card hidden">
+            <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=400" class="final-img">
+            <h1 class="fancy bigger pink">It's a Date! 💐</h1>
+            <p>Love.exe successfully deployed.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
